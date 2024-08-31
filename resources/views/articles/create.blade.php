@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+@include('commons.errors')
 <form action="{{ route('articles.store') }}" method="post">
 @csrf
 <dl class="form-list">
